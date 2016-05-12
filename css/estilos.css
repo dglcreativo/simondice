@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+#header, #contenido, #footer{
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.limpiar:before, .limpiar:after {
+    content: " ";
+    display: table;
+}
+.limpiar:after {
+    clear: both;
+}
+.limpiar {
+    *zoom: 1;
+}
+
+p{
+	color: #fff;
+}
+
+.p-arriba{
+	padding-top: 10px;
+}
+
+/* Header */
+
+header{
+	padding: 15px 0;
+	background: #000;
+}
+#header .caja-logo h1 a{
+	background: url(../images/simonlogo.png) 0 0 no-repeat;
+	background-size: 100px;
+	width: 100px;
+	height: 100px;
+	margin-right: 25px;
+	float: left;
+	display: block;
+	text-indent: -9999px;
+}
+#header .caja-logo h2{
+	padding-top: 27px;
+	font-size: 2rem;
+	color: #fff;
+}
+
+/* Contenido */
+
+#contenido{
+	padding: 20px 0;
+	width: 750px;
+}
+
+.exterior{
+	width:100%;
+	height:150px;
+	text-align: center;
+	background: #000;
+}
+
+.interior{
+	width:150px;
+	height:150px;
+	border:solid 0px;
+	float:left;
+}
+
+.zona{
+	width:90%;
+	height:130px;
+	border:solid 5px;
+	margin:auto;
+	cursor: pointer;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	-ms-border-radius: 75px;
+	-o-border-radius: 75px;
+	border-radius: 75px;
+	margin-top:5px;
+	background:black;
+	overflow:hidden;
+}
+
+.simon{
+	float: left;
+	width: 450px;
+}
+
+.poner-zona{
+	width:100%;
+	font-size:20px
+	;margin:auto;
+	text-align:center;
+	color:#000;
+	font-weight:bold;
+}
+
+button{
+	width: 5em;
+	margin-top: 40px;
+	box-sizing: border-box;
+	font-size: 20px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 0.3em 0.6em;
+	outline: none;
+}
+
+button:hover{
+	background: transparent;
+	border: 2px solid #fff;
+	color: inherit;
+}
+
+form{
+	width: 300px;
+	display: table;
+	margin-top: 150px;
+	padding-left: 20px;
+}
+
+form h2{
+	color: #000;
+	width: 100%;
+	margin-bottom: 20px;
+}
+input[type='radio']{
+	display: table-row;
+	width: 100%;
+	position: relative;
+}
+label{
+	color: #000;
+	float: left;
+}

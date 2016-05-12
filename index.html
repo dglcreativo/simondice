@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Simon Dice</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/simon.js"></script>
+</head>
+<body>
+	<header>
+		<div id="header" class="limpiar">
+			<div class="caja-logo">
+				<h1><a href="#">Simon Dice</a></h1>
+				<h2>Simon Dice</h2>
+			</div>
+			<nav>
+
+			</nav>
+		</div>
+	</header>
+	<section id="contenido">
+		<div class="simon">
+			<div class="exterior">
+				<div class="interior p-arriba">
+					<p class="jugador" id="simondice">SIMON DICE</p>
+				</div>
+				<div class="interior">
+					<div id="rojo" class="zona" onclick="zonaPulsada(this.id);"></div>
+				</div>
+				<div class="interior"></div>
+			</div>
+			<div class="exterior">
+				<div class="interior">
+					<div id="verde" class="zona" onclick="zonaPulsada(this.id);"></div>
+				</div>
+				<div class="interior">
+					<div class="zona">
+						<button type="button" onclick="empezar();">Empezar</button>
+					</div>
+				</div>
+				<div class="interior">
+					<div id="azul" class="zona" onclick="zonaPulsada(this.id);"></div>
+				</div>
+			</div>
+			<div class="exterior">
+				<div class="interior"></div>
+				<div class="interior">
+					<div id="amarillo" class="zona" onclick="zonaPulsada(this.id);"></div>
+				</div>
+				<div class="interior">
+					<p class="jugador" id="tu">TU</p>
+				</div>
+			</div>
+		</div>
+
+		<p id="poner-ronda" class="poner-zona"></p>
+		<form action="#">
+			<h2>Niveles de dificultad</h2>
+			<label for="normal">Normal
+				<input type="radio" name="niveles" value="normal" checked="cheked">
+			</label>
+			<label for="medio">Medio
+				<input type="radio" name="niveles" value="medio">
+			</label>
+			<label for="experto">Experto
+				<input type="radio" name="niveles" value="experto">
+			</label>
+		</form>
+		<div id="sonido"></div>
+	</section>
+	<footer>
+		<div id="footer" class="limpiar">
+
+		</div>
+	</footer>
+</body>
+</html>
